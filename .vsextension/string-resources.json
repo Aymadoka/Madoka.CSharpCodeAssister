@@ -1,0 +1,12 @@
+{
+  "FormatXmlDocCommentsCommand.DisplayName": "Format XML Doc Comments",
+  "FormatXmlDocCommentsCommand.ToolTipText": "Convert multi-line XML documentation comments into compact single-line format. Default shortcut: Ctrl+1, Ctrl+1. Customize in Tools > Options > Environment > Keyboard.",
+  "MakePropertiesPrivateSetCommand.DisplayName": "Make Properties Private Set",
+  "MakePropertiesPrivateSetCommand.ToolTipText": "Change all properties with public setters in the current class to use private set. Place the caret inside the target class. Default shortcut: Ctrl+1, Ctrl+2. Customize in Tools > Options > Environment > Keyboard.",
+  "MakePropertiesPublicSetCommand.DisplayName": "Make Properties Public Set",
+  "MakePropertiesPublicSetCommand.ToolTipText": "Change all properties with private setters in the current class to use public set. Place the caret inside the target class. Default shortcut: Ctrl+1, Ctrl+3. Customize in Tools > Options > Environment > Keyboard.",
+  "AddClassConstructorsCommand.DisplayName": "Add Class Constructors",
+  "AddClassConstructorsCommand.ToolTipText": "Add a private parameterless constructor and a public constructor that assigns all properties when the class has no constructor. Place the caret inside the target class. Default shortcut: Ctrl+1, Ctrl+4. Customize in Tools > Options > Environment > Keyboard.",
+  "RemovePropertyAttributesCommand.DisplayName": "Remove Property Attributes",
+  "RemovePropertyAttributesCommand.ToolTipText": "Remove Required, StringLength, MaxLength, MinLength, Display, and Description attributes from all properties in the current class. Place the caret inside the target class. Default shortcut: Ctrl+1, Ctrl+5. Customize in Tools > Options > Environment > Keyboard."
+}

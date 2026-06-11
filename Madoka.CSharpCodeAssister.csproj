@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Madoka.CSharpCodeAssister</RootNamespace>
+    <AssemblyName>Madoka.CSharpCodeAssister</AssemblyName>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="verify-remover/**" />
+    <Compile Remove="_verify/**" />
+    <Compile Remove="**/obj/**" />
+    <Compile Remove="**/bin/**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.12.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Extensibility.Build" Version="17.14.*" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.VisualStudio.Extensibility.Sdk" Version="17.14.*" />
+  </ItemGroup>
+  <Target Name="SyncExtensionManifest" AfterTargets="Build" Condition="'$(Configuration)' != ''">
+    <Copy SourceFiles="$(IntermediateOutputPath)extension.json"
+          DestinationFiles="$(OutDir).vsextension\extension.json"
+          Condition="Exists('$(IntermediateOutputPath)extension.json')" />
+    <Copy SourceFiles="$(IntermediateOutputPath)extension.json"
+          DestinationFiles="$(ProjectDir).vsextension\extension.json"
+          Condition="Exists('$(IntermediateOutputPath)extension.json')" />
+  </Target>
+</Project>

@@ -1,0 +1,195 @@
+{
+  "controlPlacements": [
+    {
+      "controlName": "Madoka.CSharpCodeAssister.AddClassConstructorsCommand",
+      "parent": {
+        "legacyParentId": {
+          "guid": "d309f791-903f-11d0-9efc-00a0c911004f",
+          "id": 24576
+        },
+        "priority": 0
+      }
+    },
+    {
+      "controlName": "Madoka.CSharpCodeAssister.FormatXmlDocCommentsCommand",
+      "parent": {
+        "legacyParentId": {
+          "guid": "d309f791-903f-11d0-9efc-00a0c911004f",
+          "id": 24576
+        },
+        "priority": 0
+      }
+    },
+    {
+      "controlName": "Madoka.CSharpCodeAssister.MakePropertiesPrivateSetCommand",
+      "parent": {
+        "legacyParentId": {
+          "guid": "d309f791-903f-11d0-9efc-00a0c911004f",
+          "id": 24576
+        },
+        "priority": 0
+      }
+    },
+    {
+      "controlName": "Madoka.CSharpCodeAssister.MakePropertiesPublicSetCommand",
+      "parent": {
+        "legacyParentId": {
+          "guid": "d309f791-903f-11d0-9efc-00a0c911004f",
+          "id": 24576
+        },
+        "priority": 0
+      }
+    },
+    {
+      "controlName": "Madoka.CSharpCodeAssister.RemovePropertyAttributesCommand",
+      "parent": {
+        "legacyParentId": {
+          "guid": "d309f791-903f-11d0-9efc-00a0c911004f",
+          "id": 24576
+        },
+        "priority": 0
+      }
+    }
+  ],
+  "commandSets": [
+    {
+      "name": "Madoka.CSharpCodeAssister.ExtensionEntrypoint",
+      "serviceMoniker": {
+        "name": "Madoka.CSharpCodeAssister.ExtensionEntrypointCommandSet",
+        "version": "1.0"
+      },
+      "commands": [
+        {
+          "tooltipText": "%AddClassConstructorsCommand.ToolTipText%",
+          "flags": "None",
+          "appliesWhen": {
+            "identifier": "b7edc8578b7b4d64b00afb2c74118d03",
+            "expression": "c0",
+            "terms": {
+              "c0": "ClientContext:Shell.ActiveEditorContentType=CSharp"
+            }
+          },
+          "shortcuts": [
+            {
+              "mod1": "Control",
+              "key1": "1",
+              "mod2": "Control",
+              "key2": "4",
+              "context": "{5EFC7975-14BC-11CF-9B2B-00AA00573819}"
+            }
+          ],
+          "name": "Madoka.CSharpCodeAssister.AddClassConstructorsCommand",
+          "displayName": "%AddClassConstructorsCommand.DisplayName%",
+          "contextProviderName": "Editor,Shell"
+        },
+        {
+          "tooltipText": "%FormatXmlDocCommentsCommand.ToolTipText%",
+          "flags": "None",
+          "appliesWhen": {
+            "identifier": "cebb920ef75e496f9ac74210b0d0ae6e",
+            "expression": "c0",
+            "terms": {
+              "c0": "ClientContext:Shell.ActiveEditorContentType=CSharp"
+            }
+          },
+          "shortcuts": [
+            {
+              "mod1": "Control",
+              "key1": "1",
+              "mod2": "Control",
+              "key2": "1",
+              "context": "{5EFC7975-14BC-11CF-9B2B-00AA00573819}"
+            }
+          ],
+          "name": "Madoka.CSharpCodeAssister.FormatXmlDocCommentsCommand",
+          "displayName": "%FormatXmlDocCommentsCommand.DisplayName%",
+          "contextProviderName": "Editor,Shell"
+        },
+        {
+          "tooltipText": "%MakePropertiesPrivateSetCommand.ToolTipText%",
+          "flags": "None",
+          "appliesWhen": {
+            "identifier": "f9176a6c3d9c4299a3f1294c4061196e",
+            "expression": "c0",
+            "terms": {
+              "c0": "ClientContext:Shell.ActiveEditorContentType=CSharp"
+            }
+          },
+          "shortcuts": [
+            {
+              "mod1": "Control",
+              "key1": "1",
+              "mod2": "Control",
+              "key2": "2",
+              "context": "{5EFC7975-14BC-11CF-9B2B-00AA00573819}"
+            }
+          ],
+          "name": "Madoka.CSharpCodeAssister.MakePropertiesPrivateSetCommand",
+          "displayName": "%MakePropertiesPrivateSetCommand.DisplayName%",
+          "contextProviderName": "Editor,Shell"
+        },
+        {
+          "tooltipText": "%MakePropertiesPublicSetCommand.ToolTipText%",
+          "flags": "None",
+          "appliesWhen": {
+            "identifier": "a904a569fadb4f18a1c239cf06350243",
+            "expression": "c0",
+            "terms": {
+              "c0": "ClientContext:Shell.ActiveEditorContentType=CSharp"
+            }
+          },
+          "shortcuts": [
+            {
+              "mod1": "Control",
+              "key1": "1",
+              "mod2": "Control",
+              "key2": "3",
+              "context": "{5EFC7975-14BC-11CF-9B2B-00AA00573819}"
+            }
+          ],
+          "name": "Madoka.CSharpCodeAssister.MakePropertiesPublicSetCommand",
+          "displayName": "%MakePropertiesPublicSetCommand.DisplayName%",
+          "contextProviderName": "Editor,Shell"
+        },
+        {
+          "tooltipText": "%RemovePropertyAttributesCommand.ToolTipText%",
+          "flags": "None",
+          "appliesWhen": {
+            "identifier": "e6ca1be6554b4dd4b4d341b7893d09ed",
+            "expression": "c0",
+            "terms": {
+              "c0": "ClientContext:Shell.ActiveEditorContentType=CSharp"
+            }
+          },
+          "shortcuts": [
+            {
+              "mod1": "Control",
+              "key1": "1",
+              "mod2": "Control",
+              "key2": "5",
+              "context": "{5EFC7975-14BC-11CF-9B2B-00AA00573819}"
+            }
+          ],
+          "name": "Madoka.CSharpCodeAssister.RemovePropertyAttributesCommand",
+          "displayName": "%RemovePropertyAttributesCommand.DisplayName%",
+          "contextProviderName": "Editor,Shell"
+        }
+      ],
+      "dynamicCommandAnchors": []
+    }
+  ],
+  "services": [
+    {
+      "host": "dotnetExtensibility",
+      "name": "Madoka.CSharpCodeAssister.ExtensionEntrypointCommandSet",
+      "serviceBaseDirectory": ".",
+      "serviceAudience": "Local | RemoteExclusiveClient",
+      "version": "1.0",
+      "entryPoint": {
+        "assemblyPath": "Madoka.CSharpCodeAssister.dll",
+        "fullClassName": "Madoka.CSharpCodeAssister.ExtensionEntrypoint"
+      },
+      "allowHostingInProcess": false
+    }
+  ]
+}
