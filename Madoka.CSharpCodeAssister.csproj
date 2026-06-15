@@ -18,7 +18,7 @@
     <PackageReference Include="Microsoft.VisualStudio.Extensibility.Build" Version="17.14.*" PrivateAssets="all" />
     <PackageReference Include="Microsoft.VisualStudio.Extensibility.Sdk" Version="17.14.*" />
   </ItemGroup>
-  <Target Name="SyncExtensionManifest" AfterTargets="Build" Condition="'$(Configuration)' != ''">
+  <Target Name="SyncExtensionManifest" BeforeTargets="CreateVsixContainer" Condition="'$(Configuration)' != ''">
     <Copy SourceFiles="$(IntermediateOutputPath)extension.json"
           DestinationFiles="$(OutDir).vsextension\extension.json"
           Condition="Exists('$(IntermediateOutputPath)extension.json')" />

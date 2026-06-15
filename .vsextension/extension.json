@@ -21,6 +21,16 @@
       }
     },
     {
+      "controlName": "Madoka.CSharpCodeAssister.GenerateCreateFromMappingCommand",
+      "parent": {
+        "legacyParentId": {
+          "guid": "d309f791-903f-11d0-9efc-00a0c911004f",
+          "id": 24576
+        },
+        "priority": 0
+      }
+    },
+    {
       "controlName": "Madoka.CSharpCodeAssister.MakePropertiesPrivateSetCommand",
       "parent": {
         "legacyParentId": {
@@ -63,7 +73,7 @@
           "tooltipText": "%AddClassConstructorsCommand.ToolTipText%",
           "flags": "None",
           "appliesWhen": {
-            "identifier": "b7edc8578b7b4d64b00afb2c74118d03",
+            "identifier": "afe6505a42984fc0994ece7fad29ab29",
             "expression": "c0",
             "terms": {
               "c0": "ClientContext:Shell.ActiveEditorContentType=CSharp"
@@ -86,7 +96,7 @@
           "tooltipText": "%FormatXmlDocCommentsCommand.ToolTipText%",
           "flags": "None",
           "appliesWhen": {
-            "identifier": "cebb920ef75e496f9ac74210b0d0ae6e",
+            "identifier": "6188b17de525414494628216b9762721",
             "expression": "c0",
             "terms": {
               "c0": "ClientContext:Shell.ActiveEditorContentType=CSharp"
@@ -106,10 +116,33 @@
           "contextProviderName": "Editor,Shell"
         },
         {
+          "tooltipText": "%GenerateCreateFromMappingCommand.ToolTipText%",
+          "flags": "None",
+          "appliesWhen": {
+            "identifier": "7fdcb7a036c2418a9d1918d439bb78f5",
+            "expression": "c0",
+            "terms": {
+              "c0": "ClientContext:Shell.ActiveEditorContentType=CSharp"
+            }
+          },
+          "shortcuts": [
+            {
+              "mod1": "Control",
+              "key1": "1",
+              "mod2": "Control",
+              "key2": "6",
+              "context": "{5EFC7975-14BC-11CF-9B2B-00AA00573819}"
+            }
+          ],
+          "name": "Madoka.CSharpCodeAssister.GenerateCreateFromMappingCommand",
+          "displayName": "%GenerateCreateFromMappingCommand.DisplayName%",
+          "contextProviderName": "Editor,Shell"
+        },
+        {
           "tooltipText": "%MakePropertiesPrivateSetCommand.ToolTipText%",
           "flags": "None",
           "appliesWhen": {
-            "identifier": "f9176a6c3d9c4299a3f1294c4061196e",
+            "identifier": "35727a6fa9c84e328f366ab350fd6490",
             "expression": "c0",
             "terms": {
               "c0": "ClientContext:Shell.ActiveEditorContentType=CSharp"
@@ -132,7 +165,7 @@
           "tooltipText": "%MakePropertiesPublicSetCommand.ToolTipText%",
           "flags": "None",
           "appliesWhen": {
-            "identifier": "a904a569fadb4f18a1c239cf06350243",
+            "identifier": "b3d78ea8340942ab95683785e43d8b7d",
             "expression": "c0",
             "terms": {
               "c0": "ClientContext:Shell.ActiveEditorContentType=CSharp"
@@ -155,7 +188,7 @@
           "tooltipText": "%RemovePropertyAttributesCommand.ToolTipText%",
           "flags": "None",
           "appliesWhen": {
-            "identifier": "e6ca1be6554b4dd4b4d341b7893d09ed",
+            "identifier": "acbb0dddab0b4344b4c86ae473eb1c12",
             "expression": "c0",
             "terms": {
               "c0": "ClientContext:Shell.ActiveEditorContentType=CSharp"

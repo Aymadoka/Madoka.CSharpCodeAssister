@@ -8,5 +8,9 @@
   "AddClassConstructorsCommand.DisplayName": "Add Class Constructors",
   "AddClassConstructorsCommand.ToolTipText": "Add a private parameterless constructor and a public constructor that assigns all properties when the class has no constructor. Place the caret inside the target class. Default shortcut: Ctrl+1, Ctrl+4. Customize in Tools > Options > Environment > Keyboard.",
   "RemovePropertyAttributesCommand.DisplayName": "Remove Property Attributes",
-  "RemovePropertyAttributesCommand.ToolTipText": "Remove Required, StringLength, MaxLength, MinLength, Display, and Description attributes from all properties in the current class. Place the caret inside the target class. Default shortcut: Ctrl+1, Ctrl+5. Customize in Tools > Options > Environment > Keyboard."
+  "RemovePropertyAttributesCommand.ToolTipText": "Remove Required, StringLength, MaxLength, MinLength, Display, and Description attributes from all properties in the current class. Place the caret inside the target class. Default shortcut: Ctrl+1, Ctrl+5. Customize in Tools > Options > Environment > Keyboard.",
+  "GenerateCreateFromMappingCommand.DisplayName": "Generate CreateFrom Mapping",
+  "GenerateCreateFromMappingCommand.ToolTipText": "Generate property mapping code for an empty static CreateFrom method based on matching property names between the parameter type and return type. The source type is resolved by reading its .cs file from referenced projects in the solution. Place the caret inside the empty method body. Default shortcut: Ctrl+1, Ctrl+6. Customize in Tools > Options > Environment > Keyboard.",
+  "GenerateCreateFromMappingCommand.FailureGeneric": "Could not generate CreateFrom mapping. Place the caret inside an empty static CreateFrom method body, then build the solution and try again.",
+  "GenerateCreateFromMappingCommand.FailureSaveDocument": "Could not determine the file path. Save the document to disk and try again."
 }
