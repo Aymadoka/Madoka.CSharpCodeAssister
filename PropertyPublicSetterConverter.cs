@@ -16,7 +16,7 @@ namespace Madoka.CSharpCodeAssister
             if (string.IsNullOrEmpty(text))
                 return null;
 
-            var classSpan = ClassSpanFinder.TryFindEnclosingClass(text, caretPosition);
+            var classSpan = ClassSpanFinder.TryFindEnclosingType(text, caretPosition);
             if (classSpan is null)
                 return null;
 

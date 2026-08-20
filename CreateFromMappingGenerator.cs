@@ -151,7 +151,9 @@ namespace Madoka.CSharpCodeAssister
             }
             else
             {
-                sourceType = semanticModel.GetTypeInfo(sourceParameter.Type).Type;
+                sourceType = sourceParameter.Type is null
+                    ? null
+                    : semanticModel.GetTypeInfo(sourceParameter.Type).Type;
                 targetType = method.ReturnType is null
                     ? null
                     : semanticModel.GetTypeInfo(method.ReturnType).Type;
@@ -197,7 +199,9 @@ namespace Madoka.CSharpCodeAssister
             }
             else
             {
-                sourceType = semanticModel.GetTypeInfo(sourceParameter.Type).Type;
+                sourceType = sourceParameter.Type is null
+                    ? null
+                    : semanticModel.GetTypeInfo(sourceParameter.Type).Type;
                 targetType = method.ReturnType is null
                     ? null
                     : semanticModel.GetTypeInfo(method.ReturnType).Type;

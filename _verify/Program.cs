@@ -1,7 +1,17 @@
 using Madoka.CSharpCodeAssister;
 using Microsoft.CodeAnalysis.CSharp;
 
-var responsePath = @"E:\Work Code\ChargingStation_Server\src\CDCD.Charging.AdminApi\Controllers\Promotion\Responses\GetProductECardItemResponse.cs";
+var responsePath = args.Length > 0
+    ? args[0]
+    : Environment.GetEnvironmentVariable("CREATE_FROM_TEST_FILE");
+
+if (string.IsNullOrWhiteSpace(responsePath) || !File.Exists(responsePath))
+{
+    Console.Error.WriteLine("Usage: dotnet run -- <path-to-csharp-file>");
+    Console.Error.WriteLine("Or set the CREATE_FROM_TEST_FILE environment variable.");
+    return 1;
+}
+
 var responseSource = await File.ReadAllTextAsync(responsePath);
 var caret = responseSource.IndexOf('{', responseSource.IndexOf("CreateFrom", StringComparison.Ordinal)) + 1;
 
@@ -28,3 +38,4 @@ var attempt = CreateFromMappingGenerator.TryGenerateWithDiagnostics(
     additionalRoots);
 
 Console.WriteLine(attempt.Result is null ? $"FAIL: {attempt.FailureMessage}" : $"OK: {attempt.Result.ReplacementText.Split('\n').Length} lines");
+return 0;

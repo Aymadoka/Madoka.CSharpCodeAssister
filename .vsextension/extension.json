@@ -73,7 +73,7 @@
           "tooltipText": "%AddClassConstructorsCommand.ToolTipText%",
           "flags": "None",
           "appliesWhen": {
-            "identifier": "afe6505a42984fc0994ece7fad29ab29",
+            "identifier": "f4e805e76fa547548e976a8a446a377d",
             "expression": "c0",
             "terms": {
               "c0": "ClientContext:Shell.ActiveEditorContentType=CSharp"
@@ -82,7 +82,7 @@
           "shortcuts": [
             {
               "mod1": "Control",
-              "key1": "1",
+              "key1": "4",
               "mod2": "Control",
               "key2": "4",
               "context": "{5EFC7975-14BC-11CF-9B2B-00AA00573819}"
@@ -96,7 +96,7 @@
           "tooltipText": "%FormatXmlDocCommentsCommand.ToolTipText%",
           "flags": "None",
           "appliesWhen": {
-            "identifier": "6188b17de525414494628216b9762721",
+            "identifier": "1adae4448f9b4d61a7e4f1caf37e0bee",
             "expression": "c0",
             "terms": {
               "c0": "ClientContext:Shell.ActiveEditorContentType=CSharp"
@@ -119,7 +119,7 @@
           "tooltipText": "%GenerateCreateFromMappingCommand.ToolTipText%",
           "flags": "None",
           "appliesWhen": {
-            "identifier": "7fdcb7a036c2418a9d1918d439bb78f5",
+            "identifier": "1bb59ba677814fe7a6b23cfe73442ed8",
             "expression": "c0",
             "terms": {
               "c0": "ClientContext:Shell.ActiveEditorContentType=CSharp"
@@ -128,7 +128,7 @@
           "shortcuts": [
             {
               "mod1": "Control",
-              "key1": "1",
+              "key1": "6",
               "mod2": "Control",
               "key2": "6",
               "context": "{5EFC7975-14BC-11CF-9B2B-00AA00573819}"
@@ -142,7 +142,7 @@
           "tooltipText": "%MakePropertiesPrivateSetCommand.ToolTipText%",
           "flags": "None",
           "appliesWhen": {
-            "identifier": "35727a6fa9c84e328f366ab350fd6490",
+            "identifier": "3b59c7965c434ec3abb1e361e46d103f",
             "expression": "c0",
             "terms": {
               "c0": "ClientContext:Shell.ActiveEditorContentType=CSharp"
@@ -151,7 +151,7 @@
           "shortcuts": [
             {
               "mod1": "Control",
-              "key1": "1",
+              "key1": "2",
               "mod2": "Control",
               "key2": "2",
               "context": "{5EFC7975-14BC-11CF-9B2B-00AA00573819}"
@@ -165,7 +165,7 @@
           "tooltipText": "%MakePropertiesPublicSetCommand.ToolTipText%",
           "flags": "None",
           "appliesWhen": {
-            "identifier": "b3d78ea8340942ab95683785e43d8b7d",
+            "identifier": "0fb24e16f2b547b09271288d04e6bc60",
             "expression": "c0",
             "terms": {
               "c0": "ClientContext:Shell.ActiveEditorContentType=CSharp"
@@ -174,7 +174,7 @@
           "shortcuts": [
             {
               "mod1": "Control",
-              "key1": "1",
+              "key1": "3",
               "mod2": "Control",
               "key2": "3",
               "context": "{5EFC7975-14BC-11CF-9B2B-00AA00573819}"
@@ -188,7 +188,7 @@
           "tooltipText": "%RemovePropertyAttributesCommand.ToolTipText%",
           "flags": "None",
           "appliesWhen": {
-            "identifier": "acbb0dddab0b4344b4c86ae473eb1c12",
+            "identifier": "3c64c48d019049d799e0061ada552319",
             "expression": "c0",
             "terms": {
               "c0": "ClientContext:Shell.ActiveEditorContentType=CSharp"
@@ -197,7 +197,7 @@
           "shortcuts": [
             {
               "mod1": "Control",
-              "key1": "1",
+              "key1": "5",
               "mod2": "Control",
               "key2": "5",
               "context": "{5EFC7975-14BC-11CF-9B2B-00AA00573819}"

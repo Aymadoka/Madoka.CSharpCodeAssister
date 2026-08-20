@@ -23,7 +23,7 @@ namespace Madoka.CSharpCodeAssister
             {
                 new(
                     ModifierKey.Control,
-                    Key.D1,
+                    Key.D5,
                     ModifierKey.Control,
                     Key.D5,
                     TextEditorContext),

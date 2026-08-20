@@ -1,4 +1,3 @@
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.VisualStudio.Extensibility;
 using System;
 
@@ -21,10 +20,5 @@ namespace Madoka.CSharpCodeAssister
                 Tags = new[] { "csharp", "refactoring", "documentation", "properties", "formatting" },
             },
         };
-
-        protected override void InitializeServices(IServiceCollection serviceCollection)
-        {
-            base.InitializeServices(serviceCollection);
-        }
     }
 }
